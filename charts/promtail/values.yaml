@@ -347,7 +347,7 @@ config:
     clients:
       - url: {{ tpl .Values.config.lokiAddress . }}
       {{- with .Values.config.snippets.extraClientConfigs }}
-      {{- toYaml . | nindent 2 }}
+      {{- toYaml . | nindent 4 }}
       {{- end }}
 
     positions:

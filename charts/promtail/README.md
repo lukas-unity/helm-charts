@@ -249,7 +249,7 @@ header, you can use:
 ```yaml
 config:
   snippets:
-    extraClientConfigs: |
+    extraClientConfigs:
       basic_auth:
         username: loki
         password: secret
